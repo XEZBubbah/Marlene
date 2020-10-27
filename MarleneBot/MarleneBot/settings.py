@@ -11,10 +11,14 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+MEDIA_ROOT = '<your_path>/media'
+MEDIA_URL = '"http://127.0.0.1:8000/'
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+ROOT_URLCONF = 'MarleneBot/MarleneBot/urls.py'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -26,7 +30,6 @@ SECRET_KEY = '6$chm0lc8ck)@*p44li4wmrpe2b&=sxk7ve1@zg=ghvdyb6)o@'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -50,11 +53,13 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'MarleneBot.urls'
+WSGI_APPLICATION = 'MarleneBot.wsgi.application'
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(SETTINGS_PATH, './MarleneBot/vistas/'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,9 +71,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WSGI_APPLICATION = 'MarleneBot.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
