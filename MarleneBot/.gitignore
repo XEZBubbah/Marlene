@@ -1,0 +1,9 @@
+!MarleneBot/MarleneBot/__pycache__/
+MarleneBot/MarleneBot/__pycache__/*
+
+!MarleneBot/redNeuronal/__pycache__/
+MarleneBot/redNeuronal/__pycache__/*
+
+!MarleneBot/redNeuronal/migrations/__pycache__/
+MarleneBot/redNeuronal/migrations/__pycache__/*
+
