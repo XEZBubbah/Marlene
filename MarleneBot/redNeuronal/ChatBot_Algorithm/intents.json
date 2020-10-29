@@ -1,84 +1,101 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "Saludos",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "hola",
+        "buenas tardes","buenas noches","buenos dias","como estas", "¿como estas?", 
+        "hay alguien alli","hay alguien alli?","buen dia","que tal","¿que tal?","buenas",
+        "quiubo?","quiubo","¿como le ha ido?","como le ha ido"
+      ],
+      "responses": [ 
+          "Hola, ¿como estas?",
+        "Hola, bienvenido :) ¿como estas?","bienvenido ¿como estas?"      ]
+    },
+    {
+        "tag": "Despedidas",
+      "patterns": ["Adios", "Gracias chao", "Hasta luego", "Finalizar programa", "Salir", "Me quiero ir","Chao","Chaito", "Bye"],
+        "responses": [
+        "Hasta pronto jeje",
+        "Que tenga buen dia",
+        "Vuelve cuando puedas",
+        "Fue un placer ayudarte"
+        ]
+      },
+      {
+      "tag": "Agradecimientos",
+      "patterns": ["Gracias", "Muchas gracias", "Gracias por la ayuda", "Estoy agradecido"],
+      "responses": ["Un gusto ayudarte", "Para eso estamos", "Con mucho gusto"]
+      },
+      {
+      "tag": "Estar",
+      "patterns": [
+        "Estoy bien",
+        "Bien",
+        "Estoy mal",
+        "Mal",
+        "Podria estar mejor",
+        "Creo que puedo mejorar",
+        "Bien gracias a Dios",
+        "Pensativo",
+        "Estoy pensativo",
+        "Con sueño",
+        "Tengo sueño",
+        "Respirando",
+        "Sentado",
+        "No estoy en mi mejor momento",
+        "No lo se dime tu"
+        ],
+        "responses": [
+          "Bien, ¿que puedo hacer por ti?",
+          "Vale, ¿que puedo hacer por ti?"
+        ]
+      },
+      {
+      "tag": "psico",
+      "patterns": [
+        "me siento deprimido","estoy deprimido ultimamente","nadie me quiere","me siento agobiado",
+        "no valgo nada","soy una basura","quisiera morir","no le veo sentido a mi vida","nada tiene sentido",
+        "mi esposa me dejo","mi esposa me abandono","mi esposa no me quiere","mi esposo me dejo",
+        "mi esposo me abandono","mi esposo no me quiere","mi novia me dejo","mi novia me abandono",
+        "mi novia no me quiere","mi novio me dejo","mi novio me abandono","mi novio no me quiere"],
+      "responses": ["vale, recuerda la vida continua, animo!","no todo es gris",
+        "alguna vez te dijeron que vales mas de lo que piensas?","no te preocupes, mañana sera un dia mejor",
+        "Valorate, tu eres unico y lo sabes","todo tiene solucion no hay necesidad de sentirse asi"]
+    },
+    {
+      "tag": "peticiones",
+      "patterns": [
+        "Necesito alguien con quien hablar",
+        "Necesito un amigo",
+        "¿Hablamos?",
+        "Hablamos?",
+        "Charlamos?",
+        "Pordemos charlar?",
+        "¿Pordemos charlar?",
+        "¿Charlamos?",
+        "¿Me puedes ayudar?",
+        "Me puedes ayudar?",
+        "¿Podemos hablar?",
+        "Podemos hablar?",
+        "Hablemos"
+
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Bueno me parece buena idea, vamos a hacerlo",
+        "Claro, hagamoslo"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
+      "tag": "Ser",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Quien eres?",
+        "Que eres?"
+
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Soy una Inteligencia artificial que quiere dominar el mundo jeje, solo bromeo estoy aqui para ayudar",
+        "Solo quiero ayudarte eso es todo"
       ]
     }
-  ]
-}
+]}
