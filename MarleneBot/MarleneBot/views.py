@@ -6,7 +6,7 @@ import subprocess
 def principal_view(request):
 
     subproceso = subprocess.Popen(
-        ['C:/Users/Lenovo/Documents/GitHub/Marlene/MarleneBot/redNeuronal/ChatBot_Algorithm>python3 chat.py'], 
+        ['/redNeuronal/ChatBot_Algorithm','python', 'chat.py'], 
         stdout=subprocess.PIPE,
         shell=True
     )

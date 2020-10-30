@@ -1,10 +1,10 @@
 import random
 import json
-
 import torch
 
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
+from redNeuronal.ChatBot_Algorithm import chat
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
