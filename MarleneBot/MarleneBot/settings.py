@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'MarleneBot',
+    'redNeuronal',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,7 @@ WSGI_APPLICATION = 'MarleneBot.wsgi.application'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SETTINGS_PATH, './MarleneBot/vistas/'),],
+        'DIRS': [os.path.join(SETTINGS_PATH, './MarleneBot/vistas/'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

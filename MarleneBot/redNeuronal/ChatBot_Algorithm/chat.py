@@ -1,17 +1,18 @@
 import random
 import json
 import torch
+import os
 
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
-from redNeuronal.ChatBot_Algorithm import chat
+from redNeuronal.ChatBot_Algorithm.model import NeuralNet
+from redNeuronal.ChatBot_Algorithm.nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents.json', 'r') as json_data:
+module_dir = os.path.dirname(__file__)  # get current directory
+with open(os.path.join(module_dir,'intents.json'), 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = "data.pth"
+FILE = os.path.join(module_dir,"data.pth")
 data = torch.load(FILE)
 
 input_size = data["input_size"]
