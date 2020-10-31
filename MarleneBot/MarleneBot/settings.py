@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'MarleneBot',
     'redNeuronal',
+    'background_task',
 ]
 
 MIDDLEWARE = [
