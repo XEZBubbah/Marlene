@@ -2,11 +2,10 @@ import random
 import json
 import torch
 import os
+
 from redNeuronal.ChatBot_Algorithm.model import NeuralNet
 from redNeuronal.ChatBot_Algorithm.nltk_utils import bag_of_words, tokenize
 
-if __name__ == "__main__":
-    main()
 
 def main():
     
@@ -61,3 +60,6 @@ def main():
 
     print("\nRespuestas dadas por el usuario\n")
     print(responses)
+
+if __name__ == "__main__":
+    main()

@@ -7,11 +7,14 @@ from multiprocessing import Process
 from background_task import background
 
 
+@background(schedule=5)
+def secondTask():
+    print("Ejecutando main xDDDD")
+    main()
+    print("Ejecutando main xDDDD")
+    
+
 def principal_view(request):
-    #secondTask()
+    secondTask()
     return render(request,'./principal.html')
 
-#@background(schedule=60)
-#def secondTask():
-    #main()
-    #print("Ejecutando main xDDDD")

@@ -16,7 +16,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_ROOT = '<your_path>/media'
-MEDIA_URL = '"http://127.0.0.1:8000/'
+MEDIA_URL = 'http://127.0.0.1:8000/'
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 ROOT_URLCONF = 'MarleneBot/MarleneBot/urls.py'
 
