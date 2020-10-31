@@ -2,7 +2,6 @@ import random
 import json
 import torch
 import os
-
 from redNeuronal.ChatBot_Algorithm.model import NeuralNet
 from redNeuronal.ChatBot_Algorithm.nltk_utils import bag_of_words, tokenize
 
@@ -26,11 +25,13 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
-print("Let's chat! (type 'quit' to exit)")
+bot_name = "Samantha"
+print("Hablemos! (Si deseas salir escribe 'quit')")
+responses = list()
 while True:
     # sentence = "do you use credit cards?"
     sentence = input("You: ")
+    responses.append(sentence)
     if sentence == "quit":
         break
 
@@ -51,4 +52,7 @@ while True:
             if tag == intent["tag"]:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
-        print(f"{bot_name}: I do not understand...")
+        print(f"{bot_name}: No entiendo, podrias repetirlo por favor...")
+
+print("\nRespuestas dadas por el usuario\n")
+print(responses)
